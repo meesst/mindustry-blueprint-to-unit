@@ -1,0 +1,24 @@
+#the mod name as displayed in-game
+displayName: "蓝图机动工厂"
+
+#the mod name used internally
+name: "blueprint-to-unit"
+
+#mod version
+version: "1.0.0"
+
+#minimal required Mindustry version
+minGameVersion: "154.1"
+
+#author name
+author: "Trae AI"
+
+#short description of the mod
+description: "将玩家已保存的任意蓝图，完整转化为可移动、可操控的悬浮飞行单位"
+
+#main class path
+main: "blueprintunit.BlueprintUnitMod"
+
+#dependencies
+//leave blank for no dependencies
+dependencies: []
