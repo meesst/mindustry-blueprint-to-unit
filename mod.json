@@ -1,0 +1,10 @@
+{
+  "name": "蓝图机动工厂",
+  "displayName": "蓝图机动工厂",
+  "description": "将玩家已保存的任意蓝图，完整转化为可移动、可操控的悬浮飞行单位",
+  "author": "Trae AI",
+  "version": "1.0.0",
+  "minGameVersion": "154.1",
+  "main": "blueprintunit.BlueprintUnitMod",
+  "dependencies": []
+}

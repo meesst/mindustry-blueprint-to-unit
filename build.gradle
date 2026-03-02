@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url = uri('https://maven.gradle.org/maven2/')
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: '../Mindustry-151.1/core/build/libs', include: '*.jar')
+    implementation fileTree(dir: '../Mindustry-151.1/desktop/build/libs', include: '*.jar')
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+jar {
+    archiveBaseName = 'blueprint-to-unit'
+    archiveVersion = '1.0.0'
+    from { configurations.compileClasspath.collect { zipTree(it) } }
+    exclude 'META-INF/**'
+}
